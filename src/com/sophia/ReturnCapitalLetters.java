@@ -11,10 +11,9 @@ public class ReturnCapitalLetters {
 
         public static int[] indexOfCaps(String s) {
             String string1 = s.toUpperCase();//"EDABIT"
-            int count =0;
             ArrayList<Integer> str2 = new ArrayList<>();
             for (int i = 0;i < s.length();i++) {
-                if (s.charAt(i) == string1.charAt(i)) {//"eDaBiT"
+                if (s.charAt(i) == string1.charAt(i) && Character.isAlphabetic(s.charAt(i))) {//"eDaBiT"
                     int arr = s.indexOf(s.charAt(i));
                    // System.out.println(arr);
                     str2.add(arr);
