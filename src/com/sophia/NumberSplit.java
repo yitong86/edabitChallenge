@@ -5,7 +5,7 @@ import java.util.*;
 
 public class NumberSplit {
     public static void main(String[] args) {
-        System.out.println(numberSplit(10)); ;
+        System.out.println(Arrays.toString(numberSplit(-5))); ;
     }
 
    // public class HalfSplit {
@@ -18,7 +18,8 @@ public class NumberSplit {
                     int[] arrays ={(int) Math.floor(n/2),(int)Math.floor(n/2)+1};
                     return arrays;
                 }else{
-                    int[] arr = {(int) Math.floor(n/2)-1,((int)Math.floor(n/2))};
+                    //	//-3,-2            Math.floor(-2.5)=-3
+                    int[] arr = {(n/2)-1,(n/2)};
 
                     return arr;
                 }
